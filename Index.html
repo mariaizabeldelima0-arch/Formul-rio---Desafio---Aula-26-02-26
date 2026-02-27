@@ -17,19 +17,20 @@
     </header>
 
     <!-- Formulário Dados Pessoais -->
-    <section>
+
 
 
         <form>
 
-            <label for="nome">Nome Completo: </label><br>
-            <input type="text" id="nome" name="nome"><br><br>
-            <label for="email">E-mail: </label><br>
-            <input type="email" id="email" name="email"><br><br>
-            <label for="idade">Idade: </label><br>
-            <input type="texto" id="idade" name="idade">
+                <section> 
 
-        </form>
+            <label for="nome">Nome Completo: </label><br>
+            <input required type="text" id="nome" name="nome" ><br><br>
+            <label for="email">E-mail: </label><br>
+            <input required type="email" id="email" name="email" ><br><br>
+            <label for="idade">Idade: </label><br>
+            <input required type="text" id="idade" name="idade" >
+
 
     </section>
 
@@ -38,10 +39,10 @@
     <!-- Questionários -->
     <section>
 
-        <form>
             <label for="materia" id="materia">Para qual matéria você está se candidatando para lecionar: </label>
             <br>
-            <select name="materias" id="materias">
+            <select required name="materias" id="materias">
+                <option value="">Selecione uma matéria...</option>
                 <option value="matematica">Matemática</option>
                 <option value="portugues">Português</option>
                 <option value="biologia">Biologia</option>
@@ -55,33 +56,38 @@
 
      <section>
                 <label id="escolaridade" for="escolaridade">Nível de Escolaridade:</label> <br>
-                <form>
-                    <input type="radio" id="ensino superior completo" name="escolaridade" value="ensino superior completo">
+        
+                    <input required type="radio" id="ensino superior completo" name="escolaridade" value="ensino superior completo">
                     <label for="ensino superior completo">Ensino Superior Completo</label>
                     <br>
-                    <input type="radio" id="cursando mestrado" name="escolaridade" value="cursando mestrado">
+                    <input required type="radio" id="cursando mestrado" name="escolaridade" value="cursando mestrado">
                     <label for="cursando mestrado">Cursando Mestrado</label>
                     <br>
-                    <input type="radio" id="mestrado completo" name="escolaridade" value="mestrado completo">
+                    <input required type="radio" id="mestrado completo" name="escolaridade" value="mestrado completo">
                     <label for="mestrado completo">Mestrado Completo</label>
                     <br>
-                    <input type="radio" id="cursando doutorado" name="escolaridade" value="cursando doutorado">
+                    <input required type="radio" id="cursando doutorado" name="escolaridade" value="cursando doutorado">
                     <label for="cursando doutorado">Cursando Doutorado</label>
                     <br>
-                    <input type="radio" id="doutorado completo" name="escolaridade" value="doutorado completo">
+                    <input required type="radio" id="doutorado completo" name="escolaridade" value="doutorado completo">
                     <label for="doutorado completo">Doutorado Completo</label>
                
-                </form>
+                    </section>
+
+<!-- Descrição -->
+
+<section>
 
                     <br><br>
 
                     <label id="descricao" for="descricao">Descrição sobre si mesmo:</label> <br>
-                    <textarea id="descricao" name="descricao" rows="5" cols="25">
-                    </textarea>
+                    <textarea id="descricao" name="descricao" rows="5" cols="25" required></textarea>
+                    <br><br>
+                    <input type="submit" value="Enviar">
+
+ </section>
 
         </form>
-
-    </section>
 
 </body>
 
